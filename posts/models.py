@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 class Post(models.Model):                                   #inheritance
@@ -7,5 +8,9 @@ class Post(models.Model):                                   #inheritance
     body = models.TextField()                               #compostion
     created_on = models.DateTimeField(auto_now_add=True)    #compostion
 
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title
+    
+    def get_absolute_url(self):
+        return reverse("list")
+
