@@ -1,0 +1,123 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+h1 {
+    font-size: 3rem;
+    color: #2c3e50; /* Darker text color */
+    text-align: center;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+/* Paragraph Styles */
+p {
+    font-size: 1.25rem;
+    color: #7f8c8d; /* Lighter text color for the paragraph */
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+    padding: 1rem;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #ddd;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+/* Card Styles for Posts Page */
+.card {
+    border: 1px solid #ddd; /* Light border for cards */
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slightly lift the card on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #34495e;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    font-size: 1.2rem;
+    color: #7f8c8d; /* Lighter subtitle color */
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+.card-link {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Container Styles */
+.container {
+    padding: 40px 15px;
+    margin-top: 20px;
+}
+
+/* Footer Styles (if added in the future) */
+footer {
+    background-color: #343a40;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem; /* Smaller font size for mobile */
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 1rem; /* Smaller text on mobile */
+        margin-top: 10px;
+    }
+
+    .card {
+        margin-bottom: 15px;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.9rem; /* Adjust navbar link font size on smaller screens */
+    }
+}
